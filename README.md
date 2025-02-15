@@ -49,7 +49,14 @@ You can customize the following settings:
 - **Clear Screen**: Toggle the option to clear the screen between menu displays.
 - **Interface Color**: Choose the color of the interface from predefined options or enter a custom hex color code.
 
-## 📄 License
+## 📄 AAC vs FLAC Comparison
+
+| AAC | FLAC |
+|------|-----|
+| ![AAC Analysis](https://github.com/user-attachments/assets/200feac4-5c1a-49bd-8e4f-a07ac0bc9be2) | ![FLAC Analysis](https://github.com/user-attachments/assets/03d3be65-4566-44ae-9d3a-8287d2806eaa) |
+| ![AAC INFO](https://github.com/user-attachments/assets/b4811cb2-408c-426e-98f7-f4edc5950c5b) | ![FLAC INFO](https://github.com/user-attachments/assets/e3d29be3-42cc-4865-9f6d-482c6f226111) |
+
+## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
