@@ -38,10 +38,15 @@ def convert_directory(input_directory, output_directory, quality, bitrate, strat
                     os.makedirs(aac_folder_path)
 
                 aac_files = []
-                cover_file_path = os.path.join(foldername, "cover.jpg")
-                cover_exists = os.path.exists(cover_file_path)
+                cover_file_path = None
+                for ext in ['jpg', 'jpeg', 'png']:
+                    potential_cover = os.path.join(foldername, f"cover.{ext}")
+                    if os.path.exists(potential_cover):
+                        cover_file_path = potential_cover
+                        break
+                cover_exists = cover_file_path is not None
                 if not cover_exists:
-                    print(f"\n\033[93mWarning: Cover file {cover_file_path} does not exist. Skipping cover copy for all files.\n")
+                    print(f"\n\033[93mWarning: No cover file found in {foldername}. Skipping cover copy for all files.\n")
 
                 for file_number, filename in enumerate(sorted(flac_files), 1):
                     flac_file_path = os.path.join(foldername, filename)
