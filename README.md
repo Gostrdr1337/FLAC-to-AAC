@@ -1,6 +1,7 @@
 # 🎵 FLAC to AAC Conversion
 
 This Python script converts audio files from FLAC format to AAC (m4a) format and creates a playlist in M3U format. The script uses the `afconvert` tool, which is available on macOS.
+
 ![Screenshot 2025-02-15 at 16 56 13](https://github.com/user-attachments/assets/4d6f3087-8de6-488e-9094-5daa616b5761)
 ## 📋 Requirements
 
